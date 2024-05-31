@@ -2,13 +2,13 @@ interface IAnimal {
   speak(): void;
 }
 
-class Horse {
+class Horse implements IAnimal {
   speak(): void {
     console.log("Neigh");
   }
 }
 
-class Rabbit {
+class Rabbit implements IAnimal {
   speak(): void {
     console.log("Honk");
   }
