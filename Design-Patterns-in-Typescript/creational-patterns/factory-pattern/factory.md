@@ -4,7 +4,6 @@ The Factory Pattern is a creational design pattern that provides an interface fo
 
 Let's consider an example where we have different types of animals (Horse and Rabbit), and we want to use a factory to create these animals.
 
-
 - Define an interface that all product types should implement. In this case, it's Animal.
 - Implement the Animal interface in concrete classes.
 - The factory class will have a method to create animals based on the type provided.
