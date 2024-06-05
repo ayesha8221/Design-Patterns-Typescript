@@ -22,6 +22,8 @@ abstract class CoffeeDecorator implements ICoffee {
   }
   cost() {
     return this.decoratedCoffee.cost();
+    // the protected method allows you to only call the method on the decoratedCoffee property
+    // this.decorated.cost() instead of setting the type and property cost in the constructor
   }
   description() {
     return this.decoratedCoffee.description();
@@ -31,6 +33,7 @@ abstract class CoffeeDecorator implements ICoffee {
 class MilkDecorator extends CoffeeDecorator {
   constructor(decoratedCoffee: ICoffee) {
     super(decoratedCoffee);
+    // the 'super' keyword is the way to call the constructor of the CoffeeDecorator class and its methods
   }
   cost(): number {
     return super.cost() + 1.5;
